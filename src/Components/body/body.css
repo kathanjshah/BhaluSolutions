@@ -1,0 +1,163 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.body1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.discription {
+    display: flex;
+    flex-direction: column;
+}
+.developer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    color: #0c0c0c;
+    text-decoration: none;
+}
+
+.linkedIn {
+    color: #0060B6;
+}
+
+.linkedIn:hover {
+    color: black;
+    text-decoration:none; 
+    cursor:pointer;  
+}
+.translate {
+    color: #1976d2;
+    animation: MoveUpDown 1s linear infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding-left: 5px;
+}
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 10px;
+    }
+  }
+.get {
+    max-width: 120px;
+}
+.imgCircle {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.body2 {
+    text-align: center;
+    
+}
+.body3 {
+    width: 100%;
+    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.body4 {
+    width: 100%
+}
+.internal {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    text-align: left;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.card {
+    background-color: lightblue;
+}
+.bold {
+    font-weight: 500;
+}
+.kathan {
+    width: 300px;
+}
+.body6 {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%
+}
+p {
+    font-weight: lighter;
+    font-size: smaller;
+}
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.imgside {
+    height: 288px;
+    width: 350px;
+    
+}
+.helloWorld {
+    background-color: black;
+}
+.skill {
+    width: 48px;
+    height: 48px;
+    object-fit: cover
+}
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 50px;
+    grid-gap: 50px;
+}
+@media only screen and (max-width: 720px) {
+    .body1 {
+        flex-direction: column;
+    }
+    .discription {
+        padding-bottom: 10px;
+    }
+    .imgCircle {
+        width: 200px;
+        height: 200px;
+    }
+    .internal {
+        flex-direction: column;
+    }
+    .about {
+        width: 100%
+    }
+    .body6 {
+        flex-direction: column;
+    }
+    
+}
