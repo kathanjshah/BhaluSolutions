@@ -16,8 +16,10 @@ import html from "../../Assets/html.png";
 import nextjs from "../../Assets/nextjs.png";
 import python from "../../Assets/python.png";
 import reactpic from "../../Assets/react.png";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import PixelButton from "../button/pixelButton";
+import H1PlusText from "../h1PlusText/h1PlusText";
 
 function Body() {
   const [active, setActive] = useState(false);
@@ -63,37 +65,27 @@ function Body() {
     );
   });
 
+  const welcome = [
+    "Welcome to Bhalu(Bear in Sanskrit) Solutions, your one-stop solution for all your business IT needs. We understand the everyday stresses and strains that come with running a company, but fear not! At Bhalu Solutions, we've got you covered. With our expert team and cutting-edge technology, we can claw away at any tension you may have and help your business reach new heights. Whether it's streamlining processes, increasing efficiency of your Web app, or making your company website look professional, we'll work with you every step of the way to achieve your goals. Let us take the burden off your shoulders, so you can focus on what really matters: growing your business.",
+  ];
+
   return (
     <div className="body">
       <div className="body1">
-        <div className="discription">
-          <div className="helloWorld"></div>
-          <h1></h1>
-          <h1>
-            &lt;Hello World! &gt; <br /> I'm{" "}
-            <span style={{ color: "#1976d2" }}>Kathan</span> Shah
-          </h1>
-          <div className="developer">
-            <BugReportIcon />
-            <p>Full Stack Developer</p>
+        <div className="tagline">
+          <h1 className="heading">We will claw your solutions out</h1>
+        </div>
+        <div className="intro">
+          <PixelButton ></PixelButton>
+          <div className="welcome">
+            <p className="para">{welcome[0]}</p>
           </div>
         </div>
       </div>
-      <div className="body2">
-        <h3 onClick={handleClick}>
-          {!active ? (
-            <span>"આ સમય પણ વહી જશે"</span>
-          ) : (
-            <span>"This time shall pass too"</span>
-          )}
-          <GTranslateIcon className="translate" />
-        </h3>
-        <p> - Narendra Lalchand Shah(Grandfather)</p>
-      </div>
 
-      <div id="Experience" className="body3">
-        <h1>Experience</h1>
-        <TimelineCmpt className="timeline" isJob={true} />
+      <div id="Solutions" className="body3">
+        <h1 className="heading">Solutions You Can Trust</h1>
+        <H1PlusText heading="01. Fast & Agile" text = "At Bhalu, we pride ourselves on being fast and agile in delivering solutions to our clients. We understand that in today's fast-paced business environment, time is of the essence. That's why our team is dedicated to quickly assessing your needs and providing efficient and effective solutions that deliver results. We use cutting-edge technologies and methodologies to ensure that our solutions are not only robust, but also flexible and adaptable to your evolving business needs. Whether you're looking to streamline your operations or jump into new markets, our fast and agile approach allows us to pivot quickly and capitalize on new opportunities"></H1PlusText>
       </div>
       <div id="Education" className="body4">
         <h1>Education</h1>
@@ -171,8 +163,12 @@ function Body() {
         <h1>Contact</h1>
         <h3>Let's create your next experience together</h3>
         <h3>kjshah@mun.ca</h3>
-        <a href="https://github.com/kathanjshah"><GitHubIcon></GitHubIcon></a>
-        <a href="https://www.linkedin.com/in/kathanjshah/"><LinkedInIcon></LinkedInIcon></a>
+        <a href="https://github.com/kathanjshah">
+          <GitHubIcon></GitHubIcon>
+        </a>
+        <a href="https://www.linkedin.com/in/kathanjshah/">
+          <LinkedInIcon></LinkedInIcon>
+        </a>
       </div>
     </div>
   );

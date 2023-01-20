@@ -3,7 +3,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5% 10% 0 10%;
+    padding: 1% 10%;
+}
+.logo {
+    object-fit: cover;
+    height: 64px;
+    width: 64px;
 }
 .logos {
     display: flex;
