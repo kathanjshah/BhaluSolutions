@@ -19,19 +19,18 @@
 .intro {
   display: flex;
   flex-direction: row;
-  padding: 0% 10% ;
+  padding: 2% 10% ;
   justify-content: space-around;
   align-items: center;
 }
 
 .pixel {
   width: 50%;
-
 }
 
 .para {
   font-size: 16px;
-  text-align: justify;
+  text-align: left;
   color: black;
 }
 .heading {
@@ -56,15 +55,10 @@
 .welcome {
   display: flex;
   height: 100%;
-  width: 50%;;
-  
+  width: 50%;
+  flex-direction: column;
 }
-.developer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+
 a {
   color: #0c0c0c;
   text-decoration: none;
@@ -80,22 +74,10 @@ a {
     color: #0060b6;
 }
 
-.button {
-    padding: 5%;
-}
-
 .linkedIn:hover {
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
-.translate {
-  color: #1976d2;
-  animation: MoveUpDown 1s linear infinite;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  padding-left: 5px;
 }
 @keyframes MoveUpDown {
   0%,
@@ -106,88 +88,61 @@ a {
     bottom: 10px;
   }
 }
-.get {
-  max-width: 120px;
-}
-.imgCircle {
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 50%;
-}
+
+
+
 .body2 {
-  text-align: center;
-}
-.body3 {
-  width: 80%;
   color: black;
   justify-content: center;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-top: 10%;
-  padding: 0% 10%;
+  padding: 2% 10%;
+  text-align: left;
+  width: 80%;
 }
+
+.body3 {
+  color: black;
+  justify-content: center;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2% 10%;
+  text-align: left;
+  width: 80%;
+}
+
+.h1plusText {
+  width: 50%;
+}
+
+.h1Imagetag {
+  width: 36%;
+  object-fit: cover;
+}
+
+.h1tagsImage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1tags {
+  width: 50%;
+}
+
 
 .body4 {
   width: 100%;
 }
 
-.internal {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  text-align: left;
-}
-.about {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-.card {
-  background-color: lightblue;
-}
-.bold {
-  font-weight: 500;
-}
-.kathan {
-  width: 300px;
-}
-.body6 {
-  margin-top: 1%;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  width: 100%;
-}
 p {
   font-weight: lighter;
   font-size: smaller;
 }
-.cardInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-}
 
-.imgside {
-  height: 288px;
-  width: 350px;
-}
-.helloWorld {
-  background-color: black;
-}
-.skill {
-  width: 48px;
-  height: 48px;
-  object-fit: cover;
-}
-.skills {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 50px;
-  grid-gap: 50px;
-}
 @media only screen and (max-width: 720px) {
   .body1 {
     flex-direction: column;
@@ -195,26 +150,27 @@ p {
   .discription {
     padding-bottom: 10px;
   }
-  .imgCircle {
-    width: 200px;
-    height: 200px;
-  }
-  .internal {
-    flex-direction: column;
-  }
-  .about {
-    width: 100%;
-  }
-  .body6 {
-    flex-direction: column;
-  }
+  
   .intro{
     flex-direction: column;
     padding: 0%;
-    
   }
   .welcome {
     width: 70%;
     
   }
+  .h1tagsImage {
+    flex-direction: column;
+  }
+  .h1tags {
+    width: 100%;
+  }
+  .h1plusText {
+    width: 100%;
+  }
+
+  .h1Imagetag {
+    width: 100%;
+  }
+
 }

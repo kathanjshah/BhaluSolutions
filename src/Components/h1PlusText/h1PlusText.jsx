@@ -2,7 +2,7 @@ import React from 'react'
 
 function H1PlusText(props) {
   return (
-    <div>
+    <div className='h1plusText'>
       <h1 className="h1heading">
         {props.heading}
       </h1>
