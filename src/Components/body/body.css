@@ -7,6 +7,8 @@
   color: white;
 }
 
+
+
 .body1 {
   display: flex;
   flex-direction: column;
@@ -89,6 +91,15 @@ a {
   }
 }
 
+h1 {
+  animation-fill-mode: both;
+    animation-duration: 1260ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: reactReveal;
+}
+
 
 
 .body2 {
@@ -120,7 +131,13 @@ a {
 .h1Imagetag {
   width: 36%;
   object-fit: cover;
+  position: relative;
+  animation-name: MoveUpDown;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
+
+
 
 .h1tagsImage {
   display: flex;
