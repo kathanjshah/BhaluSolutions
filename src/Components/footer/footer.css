@@ -1,0 +1,12 @@
+#Contact {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.col {
+    padding: 10px 0px;
+}

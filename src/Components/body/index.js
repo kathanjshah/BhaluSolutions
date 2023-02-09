@@ -64,7 +64,7 @@ function Body() {
           <h1 className="heading">We will claw your solutions out</h1>
         </div>
         <div className="intro">
-          <PixelButton></PixelButton>
+          <PixelButton link={"#Contact"}></PixelButton>
           <div className="welcome">
             <h1 className="para">{welcome[0].heading}</h1>
             <p className="para">{welcome[0].text}</p>
