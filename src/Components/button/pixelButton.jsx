@@ -3,7 +3,7 @@ import  "./pixelButton.css";
 
 function PixelButton(props) {
   return (
-      <a className="pixelButton" href={props.link}>Hover effects</a>
+      <a className="pixelButton" href={props.link}>Hover</a>
   )
 }
 

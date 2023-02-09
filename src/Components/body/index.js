@@ -3,58 +3,15 @@ import "./body.css";
 
 import { useState } from "react";
 
-import MediaCard from "../projectCard/projectCard";
-
 import SolutionsPic from "../../Assets/solutions.jpg";
 import PartnersPic from "../../Assets/partners.jpg";
 
 import PixelButton from "../button/pixelButton";
 import H1PlusText from "../h1PlusText/h1PlusText";
 
-function Body() {
-  const [active, setActive] = useState(false);
-  const handleClick = () => {
-    setActive(!active);
-  };
-  const projectCard = [
-    {
-      title: "Ricochet Robots",
-      subheader: "2D-Game",
-      img: require("../../Assets/board.png"),
-      language: "Language: Java",
-      detail:
-        'A simple implementation of Alex Randolph\'s board game Ricochet Robots including solver. This game is witten in JAVA. Where I learned some of the major algorithms in Computer science, one of such is "Find and hunt" algorithum. Over this I built an AI that can give the solution of the puzzle. The most intresting part was to learn how to build the GUI and the "back-end" supporting it. All the updates were done periodically in 4 different Iteration. This Project is hosted on Github, which leads me to learn the version control language, git. The whole design was created by me and all the code was led by me.',
-      software: "Software: Eclipse, IntelliJ.",
-      hosted: "Hosted: Github",
-      git: "https://github.com/djgrillopena/comp2005-winter20-group11",
-    },
-    {
-      title: "Sudoko Solver",
-      subheader: "2D-Game Solver",
-      img: require("../../Assets/Sudoko.png"),
-      language: "Language: Python",
-      detail:
-        'A graphical interface game of Sudoko. I have built an solver for the puzzle, which works on "BACK Tracking algorithm". It was a fun side project. I used the backtracking algorithm in this solver because if we try to find each and every solution and try to see if it works then it will take forever. So, by doing some research and talking to some of my seniors, i used the back tracking algorithum. This Project is an product of the bigger project like Richochet Robots. The management skills that i learned from the previous project encouraged me to built this one.',
-      software: "Software: PyCharm, Idel.",
-      hosted: "Hosted: Github",
-      git: "https://github.com/kathanjshah/Sudoku/tree/master",
-    },
-  ];
-  const getCard = projectCard.map((cd) => {
-    return (
-      <MediaCard
-        title={cd.title}
-        subheader={cd.subheader}
-        img={cd.img}
-        language={cd.language}
-        detail={cd.detail}
-        software={cd.software}
-        hosted={cd.hosted}
-        git={cd.git}
-      />
-    );
-  });
 
+function Body() {
+  
   const welcome = [
     {
       heading: "Prelude of Company",
@@ -75,24 +32,22 @@ function Body() {
       text: "Cost efficiency is at the forefront of our minds at Bhalu. We understand that as a business owner, you need to maximize your return on investment while keeping costs low. That's why our solutions are tailored to meet your unique needs and budget. We use a combination of proven methodologies and innovative technologies to deliver high-quality solutions at a fraction of the cost of our competitors. Our team is dedicated to finding the most cost-effective ways to improve your business, without compromising on quality or functionality. With Bear, you can rest assured that you're getting the best value for your money, and that your investment will pay off in the long-term.",
     },
     {
-      section:"about",
+      section: "about",
       heading: "Story",
       text: "Tirth, Kathan and Soham, three international students met in Canada and during their study, they discovered their shared passion for IT and the potential to help businesses succeed through technology solutions. After graduating, we decided to put their skills and knowledge to use by starting their own IT solution company, Bhalu. Our company quickly became successful in helping other businesses to streamline their operations, increase efficiency, and stay ahead of the technology curve. They were proud of the impact they were making and grateful to Canada for providing them with the opportunity to pursue their education and build their business.",
     },
     {
-      section:"about",
-      heading:"Vision",
-      text:"Our vision at Bhalu is to become a leading provider of IT solutions for businesses of all sizes. We strive to empower companies to leverage technology to improve their operations, drive growth, and stay competitive in today's fast-paced business environment. We aim to be a trusted partner for our clients, providing them with the guidance, support, and cutting-edge technology they need to reach their goals. By staying at the forefront of technological advancements and investing in our team's skill and expertise, we're able to deliver innovative solutions that give our clients a measurable edge over their competitors. Our ultimate goal is to help our clients achieve their full potential by providing them with the tools they need to succeed in the digital era.",
+      section: "about",
+      heading: "Vision",
+      text: "Our vision at Bhalu is to become a leading provider of IT solutions for businesses of all sizes. We strive to empower companies to leverage technology to improve their operations, drive growth, and stay competitive in today's fast-paced business environment. We aim to be a trusted partner for our clients, providing them with the guidance, support, and cutting-edge technology they need to reach their goals. By staying at the forefront of technological advancements and investing in our team's skill and expertise, we're able to deliver innovative solutions that give our clients a measurable edge over their competitors. Our ultimate goal is to help our clients achieve their full potential by providing them with the tools they need to succeed in the digital era.",
     },
-
   ];
 
   const isSolution = (value) => value.section === "solutions";
-  const isAbout = (value)=> value.section === "about";
+  const isAbout = (value) => value.section === "about";
 
   const sol = h1TextData.filter(isSolution);
   const abt = h1TextData.filter(isAbout);
-
 
   const getSolutions = sol.map((sl) => {
     return <H1PlusText heading={sl.heading} text={sl.text} />;
@@ -129,7 +84,6 @@ function Body() {
           <div className="h1tags">{getAbouts}</div>
           <img className="h1Imagetag" src={PartnersPic}></img>
         </div>
-        
       </div>
     </div>
   );

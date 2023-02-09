@@ -15,15 +15,16 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  flex: 1 1 0px;
+  
 }
 
 .intro {
   display: flex;
   flex-direction: row;
   padding: 2% 10% ;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  gap: 50%;
 }
 
 .pixel {
@@ -47,6 +48,7 @@
 
   /* Full height */
   height: 100%;
+  width: 80%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -130,7 +132,7 @@ h1 {
 
 .h1Imagetag {
   width: 36%;
-  object-fit: cover;
+  object-fit: contain;
   position: relative;
   animation-name: MoveUpDown;
   animation-duration: 4s;
@@ -171,6 +173,7 @@ p {
   .intro{
     flex-direction: column;
     padding: 0%;
+    gap: 0%;
   }
   .welcome {
     width: 70%;
